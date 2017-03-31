@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Tab - with Previous & Next button</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="../vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2>Bootstrap Tab <br/><small>with <br/> Previous & Next button + Design Customization</small></h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 product-tabs">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1" data-toggle="tab">Men Clothings</a></li>
+                    <li class=""><a href="#tab2" data-toggle="tab">Men Accessories</a></li>
+                    <li class=""><a href="#tab3" data-toggle="tab">Women Clothings</a></li>
+                    <li class=""><a href="#tab4" data-toggle="tab">Women Accessories</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <h1>Some Content Here for men clothings</h1>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <h1>Some Content Here for men accessories</h1>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <h1>Some Content Here for women clothings</h1>
+                    </div>
+                    <div class="tab-pane" id="tab4">
+                        <h1>Some Content Here for women accessories</h1>
+                    </div>
+                </div>
+                <div class="tab-control">
+                    <a class="previous-button" role="button"><i class="fa fa-angle-left fa-3x fa-fw"></i></a>
+                    <a class="next-button" role="button"><i class="fa fa-angle-right fa-3x fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        $('.next-button').click(function(){
+            $('.nav-tabs > .active').next('li').find('a').trigger('click');
+            //trigger the click on the tab same like we click on the tab
+        });
+
+        $('.previous-button').click(function(){
+            $('.nav-tabs > .active').prev('li').find('a').trigger('click');
+        })
+    </script>
+</body>
+
+</html>

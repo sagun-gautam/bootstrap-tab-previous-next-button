@@ -1,0 +1,48 @@
+body{
+    color: #333;
+}
+
+.product-tabs {
+    position: relative;
+}
+
+.nav-tabs {
+    text-align: center;
+    margin-top: 40px;
+    border-bottom: 3px solid #ddd;
+}
+
+.nav-tabs > li {
+    float: none;
+    display: inline-block;
+    margin-bottom: -3px;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: 1px solid transparent;
+    border-bottom-color: #d51335;
+    border-bottom-width: 3px;
+}
+
+.tab-pane{
+    padding: 10px;
+}
+
+.tab-control .previous-button, .tab-control .next-button{
+    position: absolute;
+    top: 25%;
+}
+
+.tab-control .previous-button{
+    left: 10%;
+}
+
+ .tab-control .next-button{
+     right: 10%;
+ }
