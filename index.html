@@ -8,10 +8,10 @@
     <title>Bootstrap Tab - with Previous & Next button</title>
 
     <!-- Bootstrap -->
-    <link href="../vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Fonts -->
-    <link href="../vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -53,10 +53,10 @@
     </div>
 
     <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/bootstrap.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script type="text/javascript">
         $('.next-button').click(function(){
             $('.nav-tabs > .active').next('li').find('a').trigger('click');
             //trigger the click on the tab same like we click on the tab
@@ -64,6 +64,7 @@
 
         $('.previous-button').click(function(){
             $('.nav-tabs > .active').prev('li').find('a').trigger('click');
+            //trigger the click on the tab same like we click on the tab
         })
     </script>
 </body>
